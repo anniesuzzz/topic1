@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/plan.css">
-    <title>Plan</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/landmark.css">
+    <title>Landmark</title>
+    
 </head>
-
 <body>
+
+
     <!-- top -->
     <div class="top">
         <svg width="454" height="291" viewBox="0 0 454 291" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,81 +34,77 @@
 
     <!-- 首圖 -->
     <header></header>
-    <h1>Plan Your Trip</h1>
+    <h1>LANDMARK</h1>
 
-    <div class="main-block">
-        <h2>客製化您的九州之旅</h2>
-        <h3>想來一趟九州旅行嗎？輸入您的需求，我們將為您規劃專屬於您的九州之旅！</h3>
+    <!-- 主內容 -->
+    <div class="main-block">   
+
+        <!-- 橫排選項 -->
+        <ul class="sel">
+            <li><a href="#">火山</a></li>
+            <li><a href="#">溫泉</a></li>
+            <li><a href="#">鐵道</a></li>
+            <li><a href="#">自然</a></li>
+            <li><a href="#">人文</a></li>
+            <li><a href="#">美食</a></li>
+         </ul>
+
+         <!-- 地標介紹 -->
+        <section>
+            <div class="topic1">
+                <div>
+                    <h2>熊本城</h2>
+                    <p>日本的三大名城之一。建於17世紀初期，數百年來多次經歷戰亂和天災，但至今仍保留著大部分原本的建築和城牆。是熊本居民重要的精神象徵。
+                     2016年的熊本大地震造成熊本城嚴重毀損，歷經千辛萬苦，天守閣在2021年春天終於成功修復完成！來到熊本一定要來造訪這座美麗而充滿故事的古城。</p>
+                </div>
+                <img src="./img/landmark/topic1-top.png" alt="">
+            </div>
+            <ul>
+                <li><img src="./img/landmark/topic1-1.png" alt=""></li>
+                <li><img src="./img/landmark/topic1-2 .png" alt=""></li>
+                <li><img src="./img/landmark/topic1-3.png" alt=""></li>
+                <li><h3>周邊推薦</h3>
+                <p>1.上下通商店街購物 <br>2.搭熊本市電遊市區 <br>3.櫻之馬場買伴手禮</p></li>
+            </ul>
+        </section>
 
         <section>
-            <h4><選單></h4>
-            <h5><旅程資訊></h5>
+            <div class="topic1">
+                <img src="./img/landmark/topic2-top.png" alt="">
+                <div>
+                    <h2>門司港</h2>
+                    <p>門司港是一個以港口為核心的歷史區域，曾是日本最大的港口之一，也是日本現存最大的明治時代港區建築群，保存了許多具有歷史價值的建築和文化資產，現在規劃成充滿復古異國風情的「門司港懷舊區」。從復古的門司港車站出發，沿著港灣一路往海峽廣場散步，沿途可以看到許多明治、大正時期保留下來的美麗建築，來這個充滿大正浪漫風情度過一個優閒的午後吧！</p>
+                </div>
+                    
+            </div>
             <ul>
-                <li>
-                    <p>旅遊天數：</p> 
-                    <input class="day" type="text">
-                </li>
-                <li>
-                    <p>旅遊地區：</p> 
-                    <input class="area" type="checkbox"><span>福岡</span>
-                    <input class="area" type="checkbox"><span>大分</span>
-                    <input class="area" type="checkbox"><span>熊本</span>
-                    <input class="area" type="checkbox"><span>佐賀</span>
-                    <input class="area" type="checkbox"><span>長崎</span>
-                    <input class="area" type="checkbox"><span>宮崎</span>
-                    <input class="area" type="checkbox"><span>鹿兒島</span>
-                </li>
-                <li>
-                    <p>交通方式：</p>
-                    <input class="move" type="radio"><span>大眾運輸</span>
-                    <input class="move" type="radio"><span>租車自駕</span>
-                </li>  
-                <li> 
-                    <p>喜好類型：</p>
-                    <input class="area" type="checkbox"><span>文化古蹟遊</span>
-                    <input class="area" type="checkbox"><span>自然景觀遊</span>
-                </li> 
-                <li> 
-                    <p>必去景點：</p>
-                    <textarea></textarea>
-                </li>
-                <li>
-                    <p>其他需求：</p>
-                    <textarea></textarea>
-                </li>
+                <li><h3>周邊推薦</h3>
+                <p>1.連接本州的關門大橋<br> 2.復古的門司港車站<br> 3.必吃燒咖哩本舖</p></li>
+                <li><img src="./img/landmark/topic2-1.png" alt=""></li>
+                <li><img src="./img/landmark/topic2-2.png" alt=""></li>
+                <li><img src="./img/landmark/topic2-3.png" alt=""></li>
             </ul>
-
-            <h5><聯絡資訊></h5>
-                <ul>
-                    <li>
-                        <p>您的姓名：</p> 
-                        <input class="name" type="text">
-                    </li>
-                    <li>
-                        <p>您的電話：</p> 
-                        <input class="phone" type="text">
-                    </li>
-                    <li>
-                        <p>E-mail：</p> 
-                        <input class="email" type="text">
-                    </li>
-                </ul>
-
-            <!-- 送出表單 -->
-            <input class="sendout" type="submit"> 
-
         </section>
-    </div>
 
-    <img class="map" src="../img/plan/九州アイコン 1.png" alt="">
+        <section>
+            <div class="topic1">
+                <div>
+                    <h2>太宰府</h2>
+                    <p>太宰府天滿宮位於福岡市南邊的太宰府市，以祈求學業進步、金榜題名聞名。主祭神是菅原道真，是學問、文化及藝術之神。太宰府天滿宮是全國12,000座天滿宮的總本社。作為福岡知名的旅遊勝地，神社每年吸引超過千萬名遊客造訪。神社及周邊街道古韻猶存，參道上則有則有各式商店販售名產與紀念品，熱鬧非凡。</p>
+                </div>
+                <img src="./img/landmark/topic3-top.png" alt="">
+            </div>
+                <ul>
+                <li><img src="./img/landmark/topic3-1.png" alt=""></li>
+                <li><img src="./img/landmark/topic3-2.png" alt=""></li>
+                <li><img src="./img/landmark/topic3-3.png" alt=""></li>
+                <li><h3>周邊推薦</h3>
+                    <p>1.隈研吾設計星巴克<br> 2.天滿宮表參道<br> 3.天滿宮前太鼓橋</p></li>
+            </ul>
+        </section>
 
-    <!-- 底部圖 -->
-    <ul>
-        <li><img src="../img/plan/Mask group (32) (1).png" alt=""></li>
-        <li><img src="../img/plan/Mask group (33) (1).png" alt=""></li>
-        <li><img src="../img/plan/Mask group (34) (1).png" alt=""></li>
-        <li><img src="../img/plan/Mask group (35) (1).png" alt=""></li>
-    </ul>
-
-
+        <footer></footer>
+     </div>  
+    
 </body>
+</html>

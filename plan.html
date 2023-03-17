@@ -7,11 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/share.css">
-    <title>Share</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/plan.css">
+    <title>Plan</title>
 </head>
+
 <body>
+    <!-- top -->
     <div class="top">
         <svg width="454" height="291" viewBox="0 0 454 291" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M165.159 0H288.841L335.095 81.4975H118.905L165.159 0ZM48.0145 206.402L0 291H454L405.986 206.402H48.0145Z" fill="#194E6C"/>
@@ -30,43 +32,81 @@
 
     <!-- 首圖 -->
     <header></header>
-    <h1>SHARE</h1>
+    <h1>Plan Your Trip</h1>
 
     <div class="main-block">
-       
-        
-        
-        <div class="main">
-            <h2>美食</h2>
+        <h2>客製化您的九州之旅</h2>
+        <h3>想來一趟九州旅行嗎？輸入您的需求，我們將為您規劃專屬於您的九州之旅！</h3>
+
+        <section>
+            <h4><選單></h4>
+            <h5><旅程資訊></h5>
             <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
+                <li>
+                    <p>旅遊天數：</p> 
+                    <input class="day" type="text">
+                </li>
+                <li>
+                    <p>旅遊地區：</p> 
+                    <input class="area" type="checkbox"><span>福岡</span>
+                    <input class="area" type="checkbox"><span>大分</span>
+                    <input class="area" type="checkbox"><span>熊本</span>
+                    <input class="area" type="checkbox"><span>佐賀</span>
+                    <input class="area" type="checkbox"><span>長崎</span>
+                    <input class="area" type="checkbox"><span>宮崎</span>
+                    <input class="area" type="checkbox"><span>鹿兒島</span>
+                </li>
+                <li>
+                    <p>交通方式：</p>
+                    <input class="move" type="radio"><span>大眾運輸</span>
+                    <input class="move" type="radio"><span>租車自駕</span>
+                </li>  
+                <li> 
+                    <p>喜好類型：</p>
+                    <input class="area" type="checkbox"><span>文化古蹟遊</span>
+                    <input class="area" type="checkbox"><span>自然景觀遊</span>
+                </li> 
+                <li> 
+                    <p>必去景點：</p>
+                    <textarea></textarea>
+                </li>
+                <li>
+                    <p>其他需求：</p>
+                    <textarea></textarea>
+                </li>
             </ul>
 
-            <h2>景點</h2>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
+            <h5><聯絡資訊></h5>
+                <ul>
+                    <li>
+                        <p>您的姓名：</p> 
+                        <input class="name" type="text">
+                    </li>
+                    <li>
+                        <p>您的電話：</p> 
+                        <input class="phone" type="text">
+                    </li>
+                    <li>
+                        <p>E-mail：</p> 
+                        <input class="email" type="text">
+                    </li>
+                </ul>
 
-            <h2>購物</h2>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
+            <!-- 送出表單 -->
+            <input class="sendout" type="submit"> 
 
-            <h2>交通</h2>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
-        </div>
-
-        <footer></footer>
+        </section>
     </div>
+
+    <img class="map" src="./img/plan/九州アイコン 1.png" alt="">
+
+    <!-- 底部圖 -->
+    <ul>
+        <li><img src="./img/plan/Mask group (32) (1).png" alt=""></li>
+        <li><img src="./img/plan/Mask group (33) (1).png" alt=""></li>
+        <li><img src="./img/plan/Mask group (34) (1).png" alt=""></li>
+        <li><img src="./img/plan/Mask group (35) (1).png" alt=""></li>
+    </ul>
+
+
 </body>
-</html>

@@ -40,6 +40,11 @@ body{
     letter-spacing: 0.13em;
 }
 
+.top a:hover{
+    color:#F75C2F ;
+    
+}
+
 /* --------全版-------- */
 .wrapper{
     margin: 0 auto;
