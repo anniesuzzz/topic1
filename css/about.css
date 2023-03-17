@@ -1,0 +1,95 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-top:80px ;
+}
+
+header .title{
+    margin-top: 100px;
+}
+
+header h1:first-child{
+    margin-right: 100px;
+}
+
+header h1:last-child{
+    margin-left: 70px;
+}
+
+header img{
+    height: 520px;
+}
+
+body{
+    color: #ffff;
+}
+
+.main-block{
+    width:1000px
+}
+
+section{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+section img:first-child{
+    width: 407px;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+section img~img{
+    width: 200px;
+    height: 141px;
+
+}
+
+.photo img{
+    padding-right: 3px;
+}
+
+.photo{
+    margin-right: 40px;
+    box-shadow: -27px -29px 0 7px #f7572f;
+}
+
+.text h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 195.3%;
+    letter-spacing: 0.105em;
+    padding-bottom: 25px;
+}
+
+section a{
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.105em;
+    color:#423E3E;
+    width: 150px;
+    height: 40px;
+    background-color: #ffffffa9;
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+.photo1{
+    margin-left: 40px;
+    box-shadow: 27px -29px 0 7px #f7572f;
+}
+
+.photo1 img{
+    padding-right: 0px;
+    padding-left: 3px;
+}
+
+
+
+
+
+
+
+
+

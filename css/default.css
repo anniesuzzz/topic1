@@ -1,0 +1,174 @@
+@import url(reset.css);
+
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-style: normal;
+    background-color: #194E6C;
+}
+
+/* ------top------ */
+.top{
+    height: 100px;
+    width: 100%;
+    background-color: #ffffffc4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top svg{
+    height: 60px;
+    width: 150px;
+    /* float: left; */
+    margin-top: 20px;
+}
+
+.top ul{
+    display: inline-flex;
+    text-align: center;
+    /* float:right; */
+    line-height: 100px;
+}
+
+.top li{
+    margin-right: 50px;
+}
+
+.top a{
+    font-size: 16px;
+    color:#194E6C;
+    letter-spacing: 0.13em;
+}
+
+/* --------全版-------- */
+.wrapper{
+    margin: 0 auto;
+}
+
+.main-block{
+    width:1200px;
+    margin:0 auto;
+}
+
+a{
+    /* display: block; */
+    text-decoration: none;
+    text-align: center;
+}
+
+h1{
+    display: block;
+    /* height: 103px; */
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 103px;
+    letter-spacing: 0.1em;
+    color: #423E3E;
+    background-color: rgba(255, 255, 255, 0.63);;
+    padding: 10px 100px;
+}
+
+h2{
+    font-family:'Noto Serif TC', serif;
+    font-size:40px ;
+    font-weight: 700;
+    line-height: 200%;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+p{
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.105em;
+}
+
+/* -------標題列按鍵文字------- */
+.sel{
+    height: 90px;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 60px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.sel li{
+    width: 100px;
+    height: 48px;
+    border: 2px solid #FFFFFF;
+    margin: 0 10px;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+.sel a{
+    line-height: 48px;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    color: #fff;
+}
+
+
+/* footer */
+footer {
+    height: 200px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    
+}
+
+footer ul{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+footer li{
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+footer img{
+    height: 70px;
+}
+
+footer a{
+    display: block;
+    color: #ffff;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.105em;
+}
+
+footer .right{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .middle{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .left{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer .left p{
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    line-height: 4px;
+
+}
+
+i{
+    display: inline-block;
+    color: #fff;
+}
