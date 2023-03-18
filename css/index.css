@@ -214,7 +214,6 @@ p{
 
 
 .content{
-    width:1200px;
     margin: 0 auto;
 }
 
@@ -235,12 +234,55 @@ p{
 
 .content a img{
     width: 270px;
-    padding-top: 50px;   
+    margin-top: 50px;   
 }
 
+.content li p{
+    font-weight: 700;
+    position: relative;
+    transition: 0.5s;
+}
+
+.content li p::after{
+    content: "";
+    position: absolute;   
+    left: 86px;
+    bottom: 16px;
+    width: 24px;
+    height: 2px;
+    background-color:#ffff;
+    transition: 0.3s;
+    transform: scale(0);
+}
+
+.content li p::before{
+    content: "";
+    position: absolute;   
+    right: 90px;
+    bottom: 16px;
+    width: 24px;
+    height: 2px;
+    background-color:#ffff;
+    transition: 0.3s;
+    transform: scale(0);
+}
 
 .content a:hover img {
-    -webkit-filter:brightness(0.3);
+    /* -webkit-filter:brightness(0.3); */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #2d2a2a;
+}
+
+.content a:hover p{
+    color:#ffff;
+}
+
+.content a:hover p::after{
+    transform:  scaleX(1);
+}
+
+.content a:hover p::before{
+    transform:  scaleX(1);
 }
 
 

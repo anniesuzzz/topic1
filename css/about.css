@@ -91,6 +91,30 @@ section a:hover{
     padding-left: 3px;
 }
 
+.page{
+    width:60px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page a{
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.105em;
+    color:#423E3E;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffffa9;
+    line-height: 20px;
+}
+
+.page a:hover{
+    color:#ffffffa9;
+    background-color:#f7572fb7;
+}
+
 
 
 
