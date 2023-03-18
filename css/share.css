@@ -14,4 +14,102 @@ h1{
 .main-block{
     width:1000px;
     margin: 0 auto;
+    margin-bottom: 140px;
 }
+
+.main-block>a{
+    display: inline-block;
+    width: 232px;
+    height: 55px;
+    font-family: 'Noto Serif TC';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #fff;
+    background-color:#F75C2F;
+    background-color:background-color: #F75C2F;;
+    margin-left: 760px;
+}
+
+.main-block>a:hover{
+    color:#F75C2F; 
+    background-color: #fff;
+}
+
+.food{
+    height: 310px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/share/Group\ 28\ \(1\).png);
+    margin-top: 140px;
+}
+
+.main li{
+    height: 293px;
+    width: 260px;
+    background-color: #ffff;
+
+}
+
+.main img{
+    height: 215px;
+    padding-top: 15px;
+
+}
+
+.main p{
+    font-size: 8px;
+    line-height: 150%;
+    margin: 0 14px;
+    text-align: left;
+    color: #423E3E;
+}
+
+.main h2{
+    writing-mode: vertical-rl;
+    letter-spacing: 0.55em;
+    display: block;
+    background-color:#F75C2F ;
+    padding-top: 42px;
+    margin-top: -225px;
+
+}
+
+.shopping{
+    height: 310px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/share/Rectangle\ 287.png);
+    margin-top: 70px;
+
+}
+
+.site{
+    height: 310px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/share/Rectangle\ 289.png);
+    margin-top: 70px;
+
+}
+
+.trafic{
+    
+        height: 310px;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url(../img/share/Rectangle\ 286.png);
+        margin-top: 70px;
+    
+}
+

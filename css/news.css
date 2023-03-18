@@ -77,7 +77,7 @@ h1{
     color: #322F2F;
     width: 150px;
     height: 40px;
-    background-color: #bbdae0e8;
+    background-color:#bbdae0e8 ;
     line-height: 40px;
 
     position: absolute;
@@ -85,8 +85,14 @@ h1{
     bottom: 27px;
 }
 
+.news a:hover{
+    color:#bbdae0e8 ;
+    background-color:#322F2F;
+    font-weight: 700;
+}
+
 .main-block+img{
-    margin-top: 300px;
+    margin-top: 270px;
     width: 100%;
 }
 

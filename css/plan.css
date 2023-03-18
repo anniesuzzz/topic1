@@ -60,6 +60,7 @@ section h5{
     color: #FFFFFF;
     text-align: left;
     padding-left: 50px;
+    margin-top: 30px;
 }
 
 section ul{
@@ -80,6 +81,13 @@ span{
     padding-right: 28px;
 }
 
+textarea{
+    vertical-align: -250%;
+    width: 200px;
+    height: 50px;
+}
+
+
 /* section .move [type="radio"] {
     border-radius: 0;
 } */
@@ -90,7 +98,7 @@ span{
 	font-size: 16px;
     margin: 0 auto;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 img.map{

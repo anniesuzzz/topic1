@@ -75,6 +75,12 @@ section a{
     margin-top: 40px;
 }
 
+section a:hover{
+    color:#ffffffa9;
+    background-color:#f7572fb7;
+    font-weight: 700;
+}
+
 .photo1{
     margin-left: 40px;
     box-shadow: 27px -29px 0 7px #f7572f;
