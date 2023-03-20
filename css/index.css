@@ -252,7 +252,7 @@ p{
     width: 24px;
     height: 2px;
     background-color:#ffff;
-    transition: 0.3s;
+    transition: 0.5s;
     transform: scale(0);
 }
 
@@ -264,7 +264,7 @@ p{
     width: 24px;
     height: 2px;
     background-color:#ffff;
-    transition: 0.3s;
+    transition: 0.5s;
     transform: scale(0);
 }
 
@@ -272,6 +272,7 @@ p{
     /* -webkit-filter:brightness(0.3); */
     transform: scale(1.05);
     box-shadow: 0 0 15px #2d2a2a;
+    transition: 0.5s;
 }
 
 .content a:hover p{
@@ -348,7 +349,7 @@ p{
     margin: 0 auto;
     margin-top: 10px;
     font-family:'Noto Serif TC', serif;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 44px;
     text-align: center;
     letter-spacing: 0.1em;
@@ -360,6 +361,7 @@ p{
     color: #ffffffac ;
     background-color:#423E3E;
     font-weight: 700;
+   
 }
 
 
@@ -401,7 +403,7 @@ p{
     height: 44px;
     margin: 0 auto;
     font-family:'Noto Serif TC', serif;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 44px;
     text-align: center;
     letter-spacing: 0.1em;
@@ -410,8 +412,10 @@ p{
 }
 
 .plan a:hover{
+    
     color: #ffffffac ;
     background-color:#423E3E;
     font-weight: 700;
+    
 }
 
