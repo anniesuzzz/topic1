@@ -621,19 +621,41 @@ p{
 }
 
 @media screen and (max-width: 414px){
-    .nav{
+    .nav ul {
+        max-width: 1200px;
+        height: 125px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        height: 30px;
+        flex-shrink: 0;
+        width: 30%;
+        margin: 0px;
+        margin-top: 30px;
+    }
+
+    .nav li a{
+        height: 30px;
+    }
+    /* .nav{
         height: 60px;  
         align-items: center;  
         justify-content: space-between;
     }
     
     .nav ul{
-        display: none;
+        
         flex-direction: column;
         width: 100%;
         position: absolute;        
         background-color: #ffffffa9;
-         /* js滑入效果 */
+       
          right:-500px;
          top:60px;
          z-index: 1;
@@ -666,7 +688,7 @@ p{
     
     .nav > .fa:hover ~ ul{
         left: 0;
-    }
+    } */
 
 
 
@@ -675,9 +697,9 @@ p{
         height: 270px;
     }
 
-    .nav{
+    /* .nav{
         display: none;
-    }
+    } */
 
     .about-us{
         height: 400px;
@@ -731,7 +753,7 @@ p{
         font-size: 24PX;
         display: inline-block;
         padding-right: 0px;
-        padding-left: 38px;
+        padding-left: 78px;
     }
 
     .about-kyushu h2+h2 {
