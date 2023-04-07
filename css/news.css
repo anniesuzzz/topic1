@@ -31,9 +31,31 @@ h1{
     text-align: center;
 }
 
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    font-family: 'Noto Serif TC', serif;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+h3::after{
+    content: "";
+    width: 97%;
+    height: 7px;
+    background-color: #F75C2F;
+    position: absolute;
+    left: 24px;
+    bottom: -13px;
+
+
+}
+
 
 .news{
-    width: 1000px;
+    width: 90%;
     margin: 0 auto;
     padding-top: 120px;
     display: flex;
@@ -44,21 +66,28 @@ h1{
     margin: 20px;
     height: 150px;
     background-color: #ffffffda;
+    display: flex;    
     position: relative;
 }
 
 .news img{
-    float: left;
+    /* float: left; */
     height: 150px;
     /* width: 150px; */
 }
 
+.news .text{
+    padding: 20px;
+    
+}
+
 .news img+p{
-    padding-left: 250px;
+    padding-left: 20px;
     padding-top: 16px;
-    /* font-size: 24px; */
+    display: inline-block;
     color: #322F2F;
 }
+
 
 .news p+p{
     font-weight: 700;
@@ -66,18 +95,25 @@ h1{
     line-height: 195.3%;
     letter-spacing: 0.105em;
     color: #423E3E;
-    padding-left:276px;
+    /* padding-left:276px; */
     padding-right: 190px;
+    padding-left: 36px;
+    transition: 0.3s;
+}
+
+.news p+p:hover{
+    font-size: 17px;
 }
 
 .news a{
     display: block;
     font-size: 16px;
+    font-family: 'Noto Serif TC';
     letter-spacing: 0.105em;
-    color: #322F2F;
+    color: #FFFFfF9a;
     width: 150px;
     height: 40px;
-    background-color:#bbdae0e8 ;
+    background-color:#423E3E ;
     line-height: 40px;
 
     position: absolute;
@@ -86,8 +122,8 @@ h1{
 }
 
 .news a:hover{
-    color:#bbdae0e8 ;
-    background-color:#322F2F;
+    color:#423E3E ;
+    background-color:#F75C2F;
     font-weight: 700;
 }
 
@@ -96,3 +132,58 @@ h1{
     width: 100%;
 }
 
+
+@media screen and (max-width: 414px){
+    .news li{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 65px;
+        background-color: #FFFFFF;
+    }
+
+    header{
+        height: 265px;
+    }
+
+    .sel{
+        width: 90%;
+        /* border: 3px solid red ; */
+    }
+
+    .sel li{
+        flex-basis: 0px;
+    }
+
+    .news img {
+        /* float: left; */
+        height: auto;
+        width: 100%;
+    }
+
+    .news .text {
+        width: 100%;
+        padding: 0px;
+        background-color: #FFFFFF;
+    }
+
+    .news p:first-child{
+        padding-left: 14px;
+        padding-top: 6px;
+    }
+
+    .news p+p {
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align:justify;
+    }
+
+    .news a{
+        bottom: 13px;
+        right: 90px;
+    }
+    
+
+    
+
+
+}

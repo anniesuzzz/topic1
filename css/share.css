@@ -12,7 +12,7 @@ h1{
 }
 
 .main-block{
-    width:1000px;
+    width:80%;
     margin: 0 auto;
     margin-bottom: 140px;
 }
@@ -39,7 +39,7 @@ h1{
 }
 
 .food{
-    height: 310px;
+    height: 340px;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -49,23 +49,24 @@ h1{
 }
 
 .main li{
-    height: 293px;
-    width: 260px;
+    /* height: 300px; */
+    width: 25%;
     background-color: #ffff;
 
 }
 
 .main img{
-    height: 215px;
-    padding-top: 15px;
+    /* height: 204px; */
+    padding-top: 14px;
+    width: 85%;
 
 }
 
 .main p{
-    font-size: 8px;
+    font-size: 13px;
     line-height: 150%;
-    margin: 0 14px;
-    text-align: left;
+    margin: 6px 15px;
+    text-align: justify;
     color: #423E3E;
 }
 
@@ -80,7 +81,7 @@ h1{
 }
 
 .shopping{
-    height: 310px;
+    height: 340px;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -91,7 +92,7 @@ h1{
 }
 
 .site{
-    height: 310px;
+    height: 340px;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -103,7 +104,7 @@ h1{
 
 .trafic{
     
-        height: 310px;
+        height: 340px;
         display: flex;
         text-align: center;
         justify-content: space-around;
@@ -113,3 +114,12 @@ h1{
     
 }
 
+@media screen and (max-width: 414px){
+    .main-block>a{
+        margin-left: 0px;
+    }
+
+    header {
+        height: 288px;
+    }
+}

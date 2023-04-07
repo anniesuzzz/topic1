@@ -1,14 +1,14 @@
 @import url(reset.css);
 
 
-body{
+body {
     font-family: 'Noto Sans TC', sans-serif;
     font-style: normal;
     background-color: #194E6C;
 }
 
 /* ------top------ */
-.top{
+.top {
     height: 100px;
     width: 100%;
     background-color: #ffffffc4;
@@ -16,71 +16,76 @@ body{
     justify-content: space-between;
 }
 
-.top svg{
+.top svg {
     height: 60px;
     width: 150px;
     /* float: left; */
     margin-top: 20px;
 }
 
-.top ul{
+.top i {
+    display: none;
+}
+
+.top ul {
     display: inline-flex;
     text-align: center;
     /* float:right; */
-    line-height: 100px;
 }
 
-.top li{
+.top li {
     margin-right: 50px;
+    height: 100px;
 }
 
-.top a{
+.top a {
     font-size: 16px;
-    color:#194E6C;
+    color: #194E6C;
     letter-spacing: 0.13em;
     position: relative;
     transition: 0.5s;
-   
+    line-height: 100px;
+
 }
 
-.top a:after{
+.top a:after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color:#F75C2F;
+    background-color: #F75C2F;
     transition: 0.3s;
     transform: scale(0);
 }
 
-.top a:hover{
-    color:#F75C2F ;
+.top a:hover {
+    color: #F75C2F;
 }
 
-.top a:hover::after{
-    transform:  scaleX(1);
+.top a:hover::after {
+    transform: scaleX(1);
 }
 
 /* --------全版-------- */
-.wrapper{
+.wrapper {
     margin: 0 auto;
 }
 
-.main-block{
-    width:1200px;
-    margin:0 auto;
+.main-block {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-a{
+a {
     /* display: block; */
     text-decoration: none;
     text-align: center;
 }
 
-h1{
-    display: block;
+h1 {
+    display: inline-block;
     /* height: 103px; */
     font-family: 'Noto Serif TC';
     font-style: normal;
@@ -89,20 +94,21 @@ h1{
     line-height: 103px;
     letter-spacing: 0.1em;
     color: #423E3E;
-    background-color: rgba(255, 255, 255, 0.63);;
+    background-color: rgba(255, 255, 255, 0.63);
+    ;
     padding: 10px 100px;
 }
 
-h2{
-    font-family:'Noto Serif TC', serif;
-    font-size:40px ;
+h2 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 40px;
     font-weight: 700;
     line-height: 200%;
     letter-spacing: 0.1em;
     color: #fff;
 }
 
-p{
+p {
     font-size: 16px;
     line-height: 200%;
     letter-spacing: 0.105em;
@@ -110,17 +116,18 @@ p{
 }
 
 /* -------標題列按鍵文字------- */
-.sel{
+.sel {
     height: 90px;
-    width: 1000px;
+    width: 90%;
+
     margin: 0 auto;
     padding-top: 60px;
     box-sizing: border-box;
     display: flex;
 }
 
-.sel li{
-    width: 100px;
+.sel li {
+    /* width: 100px; */
     height: 48px;
     border: 2px solid #FFFFFF;
     margin: 0 10px;
@@ -128,7 +135,8 @@ p{
     flex-grow: 1;
     text-align: center;
 }
-.sel a{
+
+.sel a {
     display: block;
     width: 100%;
     height: 48px;
@@ -138,7 +146,7 @@ p{
     color: #fff;
 }
 
-.sel a:hover{
+.sel a:hover {
     background-color: #fff;
     color: #194E6C;
     font-weight: 700;
@@ -152,53 +160,53 @@ footer {
     background-color: #07344C;
     display: flex;
     align-items: center;
-   justify-content: center;
-    
+    justify-content: center;
+
 }
 
-footer ul{
+footer ul {
+    width: 90%;
     display: flex;
     margin: 0 auto;
     align-items: center;
 }
 
-footer li{
-    padding: 0 50px;
+footer li {
     margin: 0 auto;
 }
 
-footer img{
+footer img {
     height: 70px;
 }
 
-footer a{
+footer a {
     color: #ffff;
     font-size: 12px;
     line-height: 200%;
     letter-spacing: 0.105em;
 }
 
-footer a:hover{
+footer a:hover {
     color: #F75C2F;
 }
 
-footer .right{
+footer .right {
     display: flex;
     flex-direction: column;
 }
 
-footer .middle{
+footer .middle {
     display: flex;
     flex-direction: column;
 }
 
-footer .left{
+footer .left {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-footer .left p{
+footer .left p {
     color: #fff;
     font-size: 12px;
     letter-spacing: 0.15em;
@@ -206,13 +214,202 @@ footer .left p{
 
 }
 
-i{
+i {
     display: inline-block;
     color: #fff;
     padding: 3px;
     font-size: 18px;
 }
 
-i:hover{
+i:hover {
     color: #F75C2F;
+}
+
+
+
+
+
+@media screen and (max-width: 414px) {
+    .top {
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .top ul {
+        /* display: none; */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #ffffffa9;
+        /* js滑入效果 */
+        right: 0;
+        top: 60px;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: .3s ease;
+
+    }
+
+    .top ul.-open {
+        transform: translateX(0);
+    }
+
+    .top li {
+        background-color: #ffffffa9;
+        margin: 0;
+        height: 50px;
+    }
+
+    .top a {
+        line-height: 50px;
+        display: block;
+    }
+
+    .top svg {
+        height: 40px;
+        width: 100px;
+        margin-top: 20px;
+    }
+
+    .top i {
+        display: block;
+        font-size: 30px;
+        color: #194E6C;
+        font-weight: 700;
+    }
+
+    .top>.fa:hover~ul {
+        left: 0;
+    }
+
+    .sel {
+        height: 30px;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+
+    .sel li {
+
+        height: 30px;
+        border: 2px solid #FFFFFF;
+        margin: 10px 10px;
+        flex-shrink: 0;
+        flex-basis: 85px;
+        /* flex-grow: 1; */
+        text-align: center;
+    }
+
+    .sel a {
+        display: block;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        letter-spacing: 0.15em;
+        color: #fff;
+    }
+
+
+
+
+    h1 {
+        font-size: 28px;
+        line-height: 64px;
+    }
+
+    h2 {
+        font-size: 26px;
+
+    }
+
+
+    .main-block {
+        padding-bottom: 90px;
+    }
+
+
+    /* footer */
+    footer {
+        height: 90px;
+        width: 100%;
+    }
+
+    footer ul {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    footer li {
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    footer img {
+        height: 30px;
+    }
+
+    footer a {
+        color: #ffff;
+        font-size: 12px;
+        line-height: 200%;
+        letter-spacing: 0.105em;
+    }
+
+    footer a:hover {
+        color: #F75C2F;
+    }
+
+    footer .right {
+        display: none;
+    }
+
+    footer .middle {
+        display: none;
+    }
+
+    footer .left {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer .left p {
+        color: #fff;
+        font-size: 10px;
+        letter-spacing: 0.16em;
+        line-height: 4px;
+
+    }
+
+    i {
+        display: inline-block;
+        color: #fff;
+        padding: 3px;
+        font-size: 18px;
+    }
+
+    i:hover {
+        color: #F75C2F;
+    }
+
+    .fa-brands,
+    .fab {
+        font-size: 22px;
+    }
+
+
+
+
+
+
+
+
+
 }

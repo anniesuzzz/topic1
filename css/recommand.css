@@ -14,6 +14,9 @@ h1{
     padding-top: 60px;
 }
 
+.main-block{
+
+}
 
 h2{
     text-align: center;
@@ -23,25 +26,29 @@ h2{
 
 section{
     width: 100%;
-    height: 381px;
+    /* height: 381px; */
     background-image: url(../img/recommand/section-bg1.png);
 }
 
 section .aaa{
     display: flex;
+    padding-left: 50px;
 }
 
 section .contain{
-    margin-left: 50px;
-    margin-top: 30px;
+    width: 50%;
+    /* padding-left: 50px; */
+    padding-top: 30px;
+    
 }
 
 section ul{
     display: flex;
-    padding-left: 170px;
+    flex-direction: row-reverse;
+    padding-right: 20px;
     padding-top: 30px;
     align-items: flex-end;
-}
+}  
 
 section li{
     padding-left: 10px;  
@@ -67,8 +74,11 @@ p{
 }
 
 section .contain+img{
-    float: right;
-    height: 381px;
+    
+    /* height: 381px; */
+    width: 50%;
+    object-fit: cover;
+    height: auto;
 }
 
 section+img{
@@ -116,4 +126,52 @@ section:last-child ul{
 
 .main-block{
     margin-bottom: 140px;
+}
+
+@media screen and (max-width: 414px){
+
+    header{
+        width: 100%;
+        height: 240px;
+        background-size: cover;
+        background-position:  right;
+    }
+
+    .sel li {
+        flex-basis: 90px;
+    }
+
+    h1{
+        padding: 10px 60px;
+    }
+
+    h2{
+        margin-top: 125px
+    }
+
+    h3{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    section .aaa {
+        padding-left: 0px;
+        flex-direction: column;
+    }
+
+    section .contain+img{
+        order:-1;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    section .contain{
+        width: 90%;
+        text-align:justify;
+        margin: 0 auto;
+    }
+
+
+
 }
