@@ -1,3 +1,5 @@
+
+
 header{
     width: 100%;
     height: 545px;
@@ -38,6 +40,74 @@ h1{
     background-color: #fff;
 }
 
+.btn-42,
+.btn-42 *,
+.btn-42 :after,
+.btn-42 :before,
+.btn-42:after,
+.btn-42:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-42 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Noto Serif TC';
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-42:disabled {
+  cursor: default;
+}
+.btn-42:-moz-focusring {
+  outline: auto;
+}
+.btn-42 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-42 [hidden] {
+  display: none;
+}
+.btn-42 {
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  /* padding: 1rem 3rem; */
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-42 span {
+  mix-blend-mode: difference;
+}
+.btn-42:before {
+  --thickness: 4px;
+  border: var(--thickness) solid #fff;
+  content: "";
+  inset: calc(var(--thickness) * -1);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(1.3);
+  transition: transform 0.2s, opacity 0.2s;
+}
+.btn-42:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+.btn-42:hover {
+  background-color: transparent;
+}
+
+
 .food{
     height: 340px;
     display: flex;
@@ -52,6 +122,8 @@ h1{
     /* height: 300px; */
     width: 25%;
     background-color: #ffff;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -59,6 +131,7 @@ h1{
     /* height: 204px; */
     padding-top: 14px;
     width: 85%;
+    margin: 0 auto;
 
 }
 
@@ -77,8 +150,218 @@ h1{
     background-color:#F75C2F ;
     padding-top: 42px;
     margin-top: -225px;
-
 }
+
+/* .main ul a{
+    display: block;
+        font-size: 16px;
+        font-family: 'Noto Serif TC';
+        letter-spacing: 0.105em;
+        color: #FFFFfF9a;
+        width: 150px;
+        height: 40px;
+        background-color:#423E3E ;
+        line-height: 40px;
+
+} */
+
+.btn-24,
+.btn-24 *,
+.btn-24 :after,
+.btn-24 :before,
+.btn-24:after,
+.btn-24:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-24 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #F75C2F;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Noto Serif TC'; 
+  font-size: 85%;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-24:disabled {
+  cursor: default;
+}
+.btn-24:-moz-focusring {
+  outline: auto;
+}
+.btn-24 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-24 [hidden] {
+  display: none;
+}
+.btn-24 {
+  --background: #C7482B;
+  background: none;
+  overflow: hidden;
+  padding: 0.7rem 2.7rem;
+  position: relative;
+}
+.btn-24 span {
+  display: block;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.btn-24:after,
+.btn-24:before {
+  --tilt: 30px;
+  background: #F75C2F;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  width: 100%;
+  z-index: -1;
+}
+.btn-24:after {
+  --thickness: 5px;
+  background: var(--background);
+  height: calc(100% - var(--thickness) * 2);
+  left: var(--thickness);
+  top: var(--thickness);
+  width: calc(100% - var(--thickness) * 2);
+}
+.btn-24:hover span {
+  transform: translateX(-20px);
+}
+.btn-24:hover:after,
+.btn-24:hover:before {
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+}
+
+/* btn-24-1 白框 */
+.btn-24-1,
+.btn-24-1 *,
+.btn-24-1 :after,
+.btn-24-1 :before,
+.btn-24-1:after,
+.btn-24-1:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-24-1 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #F75C2F;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family:  'Noto Serif TC';
+  font-size: 80%;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-24-1:disabled {
+  cursor: default;
+}
+.btn-24-1:-moz-focusring {
+  outline: auto;
+}
+.btn-24-1 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-24-1 [hidden] {
+  display: none;
+}
+.btn-24-1 {
+  --background: #F75C2F;
+  background: none;
+  overflow: hidden;
+  padding: 0.7rem 2.7rem;
+  position: relative;
+}
+.btn-24-1 span {
+  display: block;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.btn-24-1:after,
+.btn-24-1:before {
+  --tilt: 30px;
+  background: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  width: 100%;
+  z-index: -1;
+}
+.btn-24-1:after {
+  --thickness: 5px;
+  background: var(--background);
+  height: calc(100% - var(--thickness) * 2);
+  left: var(--thickness);
+  top: var(--thickness);
+  width: calc(100% - var(--thickness) * 2);
+}
+.btn-24-1:hover span {
+  transform: translateX(-20px);
+}
+.btn-24-1:hover:after,
+.btn-24-1:hover:before {
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+}
+
+
 
 .shopping{
     height: 340px;
@@ -115,11 +398,73 @@ h1{
 }
 
 @media screen and (max-width: 414px){
-    .main-block>a{
-        margin-left: 0px;
+    h1{
+    padding: 10px 60px;
+    }
+
+    .main-block>a {
+        margin-left: 46px;
+        margin-top: 36px;
     }
 
     header {
         height: 288px;
     }
+
+    .food{
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        margin-top: 76px;
+    }
+
+    .main h2{
+        writing-mode: horizontal-tb;
+        margin-top: -30px;
+        padding-top: 0;
+        padding-left: 12px;
+        /* margin-right: 214px; */
+    }
+
+    .main li{
+        flex-direction: row;
+        width: 95%;
+        height: auto;
+        margin-top: 10px;
+        flex-grow: 1;
+    }
+
+    .main img{
+        width: 30%;
+        padding-top: 0;
+    }
+
+    .btn-24 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .btn-24-1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .shopping{
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .site{
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .trafic{
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+    }
+
 }

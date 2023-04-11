@@ -15,16 +15,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/landmark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
     <title>Feature</title>
 
 </head>
 
 <body>
 
-
+<div class="wrapper">
     <!-- top -->
     <div class="top">
         <a href="index.html"><svg width="454" height="291" viewBox="0 0 454 291" fill="none"
@@ -48,6 +50,8 @@
         </ul>
     </div>
 
+
+    
     <!-- 首圖 -->
     <header></header>
     <h1>FEATURE</h1>
@@ -57,12 +61,12 @@
 
         <!-- 橫排選項 -->
         <ul class="sel">
-            <li><a href="#">火山</a></li>
-            <li><a href="#">溫泉</a></li>
-            <li><a href="#">鐵道</a></li>
-            <li><a href="#">自然</a></li>
-            <li><a href="#">人文</a></li>
-            <li><a href="#">美食</a></li>
+            <li><a class="btn btn-background-slide" href="#">火山</a></li>
+            <li><a class="btn btn-background-slide" href="#">溫泉</a></li>
+            <li><a class="btn btn-background-slide" href="#">鐵道</a></li>
+            <li><a class="btn btn-background-slide" href="#">自然</a></li>
+            <li><a class="btn btn-background-slide" href="#">人文</a></li>
+            <li><a class="btn btn-background-slide" href="#">美食</a></li>
         </ul>
 
         <h3 class="title">
@@ -71,7 +75,7 @@
 
         <!-- 地標介紹 -->
         <section>
-            <div class="topic1" data-aos="fade-left">
+            <div class="topic1" data-aos="fade-right">
                 <div class="text">
                     <h2>熊本城</h2>
                     <p>日本的三大名城之一。建於17世紀初期，數百年來多次經歷戰亂和天災，但至今仍保留著大部分原本的建築和城牆。是熊本居民重要的精神象徵。
@@ -79,26 +83,16 @@
                 </div>
                 <img src="./img/landmark/topic1-top.png" alt="">
             </div>
-            <!-- <ul data-aos="fade-right">
-                <li><a href="./img/landmark/topic1-1.png" data-lightbox="part2" data-title="上下通商店街購物："><img
-                            src="./img/landmark/topic1-1.png" alt=""></a></li>
-                <li><a href="./img/landmark/topic1-2 .png" data-lightbox="part2" data-title="搭熊本市電遊市區："><img
-                            src="./img/landmark/topic1-2 .png" alt=""></a></li>
-                <li><a href="./img/landmark/topic1-3.png" data-lightbox="part2" data-title="櫻之馬場買伴手禮："><img
-                            src="./img/landmark/topic1-3.png" alt=""></a></li>
-                <li class="introduce">
-                    <h3>周邊推薦</h3>
-                    <p>1.上下通商店街購物 <br>2.搭熊本市電遊市區 <br>3.櫻之馬場買伴手禮</p>
-                </li>
-            </ul> -->
+           
 
-            <div data-aos="fade-right" class="old-ul">
+            <div data-aos="fade-left" class="old-ul">
                 <div class="old-ul__top">
-                    <a href="./img/landmark/topic1-1.png" data-lightbox="part2" data-title="上下通商店街購物："><img
+                    <a href="./img/landmark/lightbox1-1.jpg" data-lightbox="part2" data-title="上下通商店街購物：熊本市區最熱鬧的商店街，"><img
                         src="./img/landmark/topic1-1.png" alt=""></a>
-                    <a href="./img/landmark/topic1-2 .png" data-lightbox="part2" data-title="搭熊本市電遊市區："><img
+                    <a href="./img/landmark/lightbox1-2.jpg" data-lightbox="part2" data-title="搭熊本市電遊市區："><img
                         src="./img/landmark/topic1-2 .png" alt=""></a>
-                    <a href="./img/landmark/topic1-3.png" data-lightbox="part2" data-title="櫻之馬場買伴手禮："><img
+                        <i class="bi bi-chevron-double-right"></i>
+                    <a href="./img/landmark/lightbox1-3.jpg" data-lightbox="part2" data-title="櫻之馬場買伴手禮："><img
                         src="./img/landmark/topic1-3.png" alt=""></a>
                 </div>
                 <div class="introduce">
@@ -109,7 +103,7 @@
         </section>
 
         <section>
-            <div class="topic1" data-aos="fade-left">
+            <div class="topic1" data-aos="fade-right">
                 <img src="./img/landmark/topic2-top.png" alt="">
                 <div class="text">
                     <h2>門司港</h2>
@@ -118,31 +112,17 @@
                 </div>
 
             </div>
-            <!-- <ul data-aos="fade-right">
-                <li>
-                    <h3>周邊推薦</h3>
-                    <p>1.連接本州的關門大橋<br> 2.復古的門司港車站<br> 3.必吃燒咖哩本舖</p>
-                </li>
-                <li><a href="./img/landmark/topic2-1.png" data-lightbox="part2"
-                        data-title="連接本州的關門大橋：橋的另一端即是本州的山口縣，橋下也有行人可以行走的海底隧道唷"><img src="./img/landmark/topic2-1.png"
-                            alt=""></a></li>
-                <li><a href="./img/landmark/topic2-2.png" data-lightbox="part2"
-                        data-title="門司港車站：第一座以車站身分被認證的重要文化財，保留大正時期建築特色外觀與復古的內部裝潢，是門司港不能錯過的重要地標"><img
-                            src="./img/landmark/topic2-2.png" alt=""></a></li>
-                <li><a href="./img/landmark/topic2-3.png" data-lightbox="part2"
-                        data-title="燒咖哩：是門司港最著名的特色美食，以咖哩飯、雞蛋加上起司焗烤，上桌時熱騰騰剛出爐的起司咖哩仍滋滋作響，是令人難忘的好滋味！"><img
-                            src="./img/landmark/topic2-3.png" alt=""></a></li>
-            </ul> -->
-
-            <div data-aos="fade-right" class="old-ul">
+        
+            <div data-aos="fade-left" class="old-ul"> 
                 <div class="old-ul__top">
-                    <a href="./img/landmark/topic2-1.png" data-lightbox="part2"
+                    <a href="./img/landmark/lightbox2-1.jpg" data-lightbox="part2"
                         data-title="連接本州的關門大橋：橋的另一端即是本州的山口縣，橋下也有行人可以行走的海底隧道唷"><img src="./img/landmark/topic2-1.png"
                         alt=""></a>
-                    <a href="./img/landmark/topic2-2.png" data-lightbox="part2"
+                    <a href="./img/landmark/lightbox2-2.jpg" data-lightbox="part2"
                         data-title="門司港車站：第一座以車站身分被認證的重要文化財，保留大正時期建築特色外觀與復古的內部裝潢，是門司港不能錯過的重要地標"><img
                         src="./img/landmark/topic2-2.png" alt=""></a>
-                    <a href="./img/landmark/topic2-3.png" data-lightbox="part2"
+                        <i class="bi bi-chevron-double-right"></i>
+                    <a href="./img/landmark/lightbox2-3.jpg" data-lightbox="part2"
                         data-title="燒咖哩：是門司港最著名的特色美食，以咖哩飯、雞蛋加上起司焗烤，上桌時熱騰騰剛出爐的起司咖哩仍滋滋作響，是令人難忘的好滋味！"><img
                         src="./img/landmark/topic2-3.png" alt=""></a>
                 </div>
@@ -154,7 +134,7 @@
         </section>
 
         <section>
-            <div class="topic1" data-aos="fade-left">
+            <div class="topic1" data-aos="fade-right">
                 <div class="text topic1__text">
                     <h2>太宰府</h2>
                     <p>太宰府天滿宮位於福岡市南邊的太宰府市，以祈求學業進步、金榜題名聞名。主祭神是菅原道真，是學問、文化及藝術之神。太宰府天滿宮是全國12,000座天滿宮的總本社。作為福岡知名的旅遊勝地，神社每年吸引超過千萬名遊客造訪。神社及周邊街道古韻猶存，參道上則有則有各式商店販售名產與紀念品，熱鬧非凡。
@@ -163,15 +143,16 @@
                 <img src="./img/landmark/topic3-top.png" alt="">
             </div>
 
-            <div data-aos="fade-right" class="old-ul">
+            <div data-aos="fade-left" class="old-ul">
                 <div class="old-ul__top">
-                    <a href="./img/landmark/topic3-1.png" data-lightbox="part3"
+                    <a href="./img/landmark/lightbox3-1.jpg" data-lightbox="part3"
                         data-title="隈研吾設計星巴克：九州最有特色的星巴克之一，由知名建築師隈研吾設計，內部用兩千根木條對角編織而成，卻不使用任何釘子，造就這個傳統與現代、潮流與在地融合的特色空間"><img
                             src=./img/landmark/topic3-1.png alt=""></a>
-                    <a href="./img/landmark/topic3-2.png" data-lightbox="part3"
+                    <a href="./img/landmark/lightbox3-2.jpg" data-lightbox="part3"
                         data-title="天滿宮表參道：這條通往天滿宮短短幾百公尺的表參道，聚集了許多特色店家販賣伴手禮與美食，遊人如織"><img
                             src=./img/landmark/topic3-2.png alt=""></a>
-                    <a href="./img/landmark/topic3-3.png" data-lightbox="part3"
+                            <i class="bi bi-chevron-double-right"></i>
+                    <a href="./img/landmark/lightbox3-3.jpg" data-lightbox="part3"
                         data-title="天滿宮前太鼓橋：三座通往本殿的小橋，各自代表著「過去」、「現在」、「未來」。據說經過這些橋，身心便能獲得淨化"><img
                             src="./img/landmark/topic3-3.png" alt=""></a>
                 </div>
@@ -213,6 +194,7 @@
         </ul>
 
     </footer>
+</div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init({ duration: 3000, })</script>
@@ -220,29 +202,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
         integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
     <script>
         $(function () {
-            $(".lb-data .lb-caption").css({ fontWeight: "300", fontSize: "13px", lineHeight: "1.4em", letterSpacing: "0.115em" });
+            $(".lb-data .lb-caption").css({ fontWeight: "300", fontSize: "14px", lineHeight: "1.6em", letterSpacing: "0.2em" });
             $(".lb-data .lb-number").remove();
             $(".lb-outerContainer").css({ borderRadius: "0px" })
             // $(".lb-data .lb-close").css({backgroundSize:"contain",width: "6%"});
 
         })
     </script>
-    <script>
-        $(function () {
-            let is_open = false;
-            $(".top i").click(function () {
-                if (is_open == false) {
-                    $(".top ul").animate({ right: "0px" }, 1000).show();
-                    is_open = true;
-                } else {
-                    $(".top ul").animate({ right: "-500px", display: 'none' }, 1000);
-                    is_open = false;
-                }
-            })
+   <script>
+    $(function () {
+        let is_open = false;
+        $(".top i").click(function () {
+            if (is_open == false) {
+                $(".top ul").animate({ right: "0px" }, 1000).show();
+                is_open = true;
+            } else {
+                $(".top ul").animate({ right: "-500px", display: 'none' }, 1000);
+                is_open = false;
+            }
         })
+    })
     </script>
+
+
     <!-- <script>
         const images = document.querySelectorAll(".show");
         const popup = document.createElement("div");

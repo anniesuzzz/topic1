@@ -66,19 +66,73 @@ section h5{
     letter-spacing: 0.105em;
     color: #FFFFFF;
     text-align: left;
-    padding-left: 50px;
     margin-top: 30px;
 }
 
-section ul{
+section .selection{
     padding-left:50px ;
     color: #FFFFFF;
 }
 
+section .selection ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section .selection ul li:first-child {
+    list-style-type: circle;
+}
+
+section .selection ul.day{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section .selection ul.day li{
+    padding-right: 24px;
+
+}
+
+section .selection ul.area{
+    display: flex;
+    flex-direction: row;
+}
+
+section .selection ul.area li{
+    flex-grow: 1;
+}
+
+section .selection ul.traffic{
+    display: flex;
+    flex-direction: row;
+}
+
+section .selection ul.traffic li{
+    padding-right: 24px;
+
+}
+
+section .selection ul.like{
+    display: flex;
+    flex-direction: row;
+}
+
+section .selection ul.like li{
+    padding-right: 24px;
+
+}
+
+
 p{
     display: inline-block;
     line-height: 300%;
-    letter-spacing: 0.125em
+    letter-spacing: 0.125em;
+    font-size: 16px;
+    font-weight: 700;
+    color:darkgoldenrod;
+    
 }
 
 span{
@@ -128,7 +182,7 @@ img.map{
     margin-top: -240px;
 }
 
-img+ul{
+.ani{
     width:100%;
     display: flex;
 
@@ -175,20 +229,63 @@ img+ul li img{
         padding: 10px 50px;
     }
 
+
+    h2{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    h3{
+        line-height: 200%;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
     img.map{
-        width: 345px;
+        width: 338px;
         height: auto;
         margin-left: 0px;
         margin-top: 0px;
         position: absolute;
         top: 399px;
-        left: 114px;
+        left: 76px;
         z-index: -1;
         opacity: 0.4;
     }
 
     section ul{
-        padding: 0 30px;
+        padding: 0px;
     }
+    section .selection ul.area{
+        flex-direction:column;
+    }
+    section .selection ul.traffic{
+        flex-direction:column;
+    }
+    section .selection ul.like{
+        flex-direction:column;
+    }
+
+    .sendout{
+    border: 3px solid white;
+    font-weight: 700;
+    margin-top: 52px;
+    width: 210px;
+    }
+
+    @keyframes slide-ani {
+        from {
+          left: 0px;
+        }
+        to {
+          left: -414px;
+        }
+      }
+
+
+
+   
 
 }

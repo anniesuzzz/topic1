@@ -113,6 +113,10 @@ section ul {
     align-items: center;
 }
 
+i{
+    display: none;
+}
+
 .old-ul {
     height: 200px;
     margin-top: 30px;
@@ -123,6 +127,8 @@ section ul {
     padding-left: 22px;
     padding-right: 22px;
 }
+
+
 
 @media screen and (max-width: 414px) {
     .old-ul {
@@ -241,7 +247,7 @@ section p {
     }
 
     .title {
-        margin-top: 135px;
+        margin-top: 160px;
         margin-left: 20px;
     }
 
@@ -271,6 +277,22 @@ section p {
     section .topic1 {
         background-image: none;
     }
+
+    section .old-ul__top{
+        position: relative;
+    }
+
+    .bi.bi-chevron-double-right{
+        display: block;
+        
+        position: absolute;
+        font-size: 34px;
+        top: 58px;
+        right: 10px;
+        /* position: sticky; */
+        transform: translate(-50%, -50%);
+    }
+    
 
     .text {
         margin: 20px;

@@ -44,12 +44,13 @@
             <h3>想來一趟九州旅行嗎？輸入您的需求，我們將為您規劃專屬於您的九州之旅！</h3>
 
             <section>
-                <h4><選單></h4>
-                <h5><旅程資訊></h5>
-                <ul>
-                    <li>
-                        <p>旅遊天數：</p>
-                        <select name="day" style="height: 24px;">
+                <!-- <h4><選單></h4> -->
+                
+                <div class="selection">
+                    <h5><旅程資訊></h5>
+                    <ul class="day">
+                        <li><p>旅遊天數：</p></li>
+                        <li><select name="day" style="height: 28px;">
                             <option>請選擇天數</option>
                             <option>3天</option>
                             <option>4天</option>
@@ -59,59 +60,60 @@
                             <option>8天</option>
                             <option>9天</option>
                             <option>10天</option>
-
-
-                        </select>
-                    </li>
-                    <li>
-                        <p>旅遊地區：</p> 
-                        <input class="area" type="checkbox"><span>福岡</span>
-                        <input class="area" type="checkbox"><span>大分</span>
-                        <input class="area" type="checkbox"><span>熊本</span>
-                        <input class="area" type="checkbox"><span>佐賀</span>
-                        <input class="area" type="checkbox"><span>長崎</span>
-                        <input class="area" type="checkbox"><span>宮崎</span>
-                        <input class="area" type="checkbox"><span>鹿兒島</span>
-                    </li>
-                    <li>
-                        <p>交通方式：</p>
-                        <input class="move" type="checkbox"><span>大眾運輸</span>
-                        <input class="move" type="checkbox"><span>租車自駕</span>
-                        <input class="move" type="checkbox"><span>二者搭配</span>
-                    </li>  
-                    <li> 
-                        <p>喜好類型：</p>
-                        <input class="like" type="checkbox"><span>文化古蹟遊</span>
-                        <input class="like" type="checkbox"><span>自然景觀遊</span>
-                    </li> 
-                    <li> 
-                        <p>必去景點：</p>
-                        <textarea></textarea>
-                    </li>
-                    <li>
-                        <p>其他需求：</p>
-                        <textarea></textarea>
-                    </li>
-                </ul>
-
-                <h5><聯絡資訊></h5>
-                    <ul>
-                        <li>
-                            <p>您的姓名：</p> 
-                            <input class="name" type="text">
-                        </li>
-                        <li>
-                            <p>您的電話：</p> 
-                            <input class="phone" type="text">
-                        </li>
-                        <li>
-                            <p>E-mail：</p> 
-                            <input class="email" type="text" style="margin-left: 12px;">
-                        </li>
+                        </select></li>
+                    </ul>
+                    <ul class="area">
+                        <li><p>旅遊地區：</p> </li>
+                        <li><input class="area" type="checkbox"><span>福岡</span></li>
+                        <li><input class="area" type="checkbox"><span>大分</span></li>
+                        <li><input class="area" type="checkbox"><span>熊本</span></li>
+                        <li><input class="area" type="checkbox"><span>佐賀</span></li>
+                        <li><input class="area" type="checkbox"><span>長崎</span></li>
+                        <li><input class="area" type="checkbox"><span>宮崎</span></li>
+                        <li><input class="area" type="checkbox"><span>鹿兒島</span></li>
                     </ul>
 
+                    <ul class="traffic">
+                        <li><p>交通方式：</p></li>
+                        <li><input class="move" type="checkbox"><span>大眾運輸</span></li>
+                        <li><input class="move" type="checkbox"><span>租車自駕</span></li>
+                        <li><input class="move" type="checkbox"><span>二者搭配</span></li>
+                    </ul> 
+
+                    <ul class="like">
+                        <li> <p>喜好類型：</p></li>
+                        <li><input class="like" type="checkbox"><span>文化古蹟遊</span></li>
+                        <li><input class="like" type="checkbox"><span>自然景觀遊</span></li> 
+                    </ul>
+
+                    <ul class="must">
+                        <li><p>必去景點：</p></li>
+                        <li><textarea></textarea></li>    
+                    </ul>
+
+                    <ul class="other">
+                        <li><p>其他需求：</p></li>
+                        <li><textarea></textarea></li>    
+                    </ul>
+                
+
+                    <h5><聯絡資訊></h5>
+                    <ul>
+                        <li><p>您的姓名：</p></li> 
+                        <li><input class="name" type="text"></li>
+                    </ul>
+                    <ul>
+                        <li><p>您的電話：</p></li>  
+                        <li><input class="phone" type="text">
+                    </ul>
+                    <ul>
+                        <li><p>E-mail：</p></li> 
+                        <li><input class="email" type="text" ></li>
+                    </ul>
+                </div>
+
                 <!-- 送出表單 -->
-                <input class="sendout" type="submit" value="送出" style="border: 2px #F75C2F solid;"> 
+                <input class="sendout" type="submit" value="送出" style="background-color: darkgoldenrod;; color:white; border: 3px solid white;"> 
 
             </section>
         </div>
@@ -119,7 +121,7 @@
         <img class="map" src="./img/plan/九州アイコン 1.png" alt="">
 
         <!-- 底部圖 -->
-        <ul>
+        <ul class="ani">
             <li><img src="./img/plan/Mask group (32) (1).png" alt=""></li>
             <li><img src="./img/plan/Mask group (33) (1).png" alt=""></li>
             <li><img src="./img/plan/Mask group (34) (1).png" alt=""></li>
@@ -131,7 +133,7 @@
             
         </ul>
 
-    </div>
+    
 
     <!-- 頁尾 -->
     <footer>
@@ -162,6 +164,7 @@
         </ul>
           
     </footer>
+</div>
 
     <script>
         let input_e1 = document.getElementsByTagName("input");
