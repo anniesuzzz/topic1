@@ -14,6 +14,7 @@ h1 {
 .main-block {
     width: 1000px;
     margin-bottom: 140px;
+  
 }
 
 .sel {
@@ -58,8 +59,12 @@ section {
 }
 
 .lb-data .lb-caption {
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif; 
 }
+
+span .lb-caption {
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: justify;}
 
 .lb-data {
     padding: 5px 6px;
@@ -326,7 +331,60 @@ section p {
         height: 172px;
     }
 
-    
+    section .topic1 img{
+        border: 6px double #f75757;
+    }
+
+    .around{
+        display: inline-block;
+        padding-right: 100px;
+        line-height: 42px;
+        border-bottom: 3px solid #F75C2F;
+        margin-bottom: 10px;
+    }
+
+    section .old-ul__top {
+        padding: 7px;
+    }
+
+
+    .old-ul__top a{
+        padding-right: 10px;
+    }
+
+    .arrow-right,
+    .arrow-left,
+    .long-arrow-right,
+    .long-arrow-left{
+    display: block;
+    margin: 12px auto;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    position: relative;
+        left: 160px;
+    }
+    .arrow-right,
+    .long-arrow-right{
+    transform: rotate(135deg);
+    }
+
+    .arrow-left,
+    .long-arrow-left{
+    transform: rotate(-45deg);
+    }
+    .long-arrow-right::after,
+    .long-arrow-left::after{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 75px;
+    background-color: #fff;
+    transform: rotate(-45deg) translate(25px, 9px);
+    left: 0;
+    top: 0;
+    }
 
 
     /* section ul li{

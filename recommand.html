@@ -169,7 +169,7 @@
 
    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init({duration: 3000,})</script>  
+    <script>AOS.init({duration: 2000,})</script>  
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -195,13 +195,23 @@
                 minSlides: 2,
                 maxSlides: 3,
                 slideMargin: 10
-            });
-            
+            });  
             
         })
     </script> 
-    
-    
+    <!-- <script>
+    // 獲取<Section>元素
+const section = document.querySelector('section');
+
+// 檢查視窗寬度是否小於500
+if (window.innerWidth < 500) {
+  // 修改data-aos屬性值
+  section.setAttribute('data-aos', '');
+}
+
+    </script> -->
+
+
     
 </body>
 </html>
