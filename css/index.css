@@ -620,7 +620,7 @@ p{
 }
 
 .owl-carousel .owl-stage {
-padding-left: 27px;
+padding-left: 20px;
 }
 
 .news .item{
@@ -924,6 +924,18 @@ background-size: cover;
         height: 30px;
     }
 
+    .nav li a:before{
+        left: 5px;
+        top: -10px;
+        width: 90%;
+    }
+
+    .nav li a:after {
+        left: 5px;
+        bottom: 1px;
+        width: 90%;
+    }
+
     .about-us{
         height: 400px;
         background-position: -174px;
@@ -968,6 +980,12 @@ background-size: cover;
         
     }
 
+    .feature .content li p{
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+    }
+
     .about-kyushu .container{
         flex-direction: column;
         padding-top: 60px;
@@ -977,7 +995,7 @@ background-size: cover;
         font-size: 24PX;
         display: inline-block;
         padding-right: 0px;
-        padding-left: 78px;
+        padding-left: 82px;
     }
 
     .about-kyushu h2+h2 {
@@ -1002,6 +1020,10 @@ background-size: cover;
     .bar2 {
         height: 120px;
     }
+
+    .owl-carousel .owl-stage {
+        padding-left: 22px;
+        }
 
     .plan {
         height: 500px;

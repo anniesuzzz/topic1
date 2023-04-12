@@ -278,7 +278,7 @@ i:hover {
         display: none;
         flex-direction: column;
         width: 100%;
-        position: absolute;        
+        position: fixed;        
         background-color: #ffffffa9;
          /* js滑入效果 */
          right:-500px;
