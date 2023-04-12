@@ -113,6 +113,9 @@ section:nth-of-type(3){
     margin-top: 38px;
 }
 
+.bx-wrapper .bx-controls-direction a{
+    z-index: 10;
+}
 
 /* .bx-wrapper{
     margin-top: 32px;
